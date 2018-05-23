@@ -4,6 +4,10 @@ public class Square {
 
     Square(double a) {
         this.a = a;
+    }
 
+    double squareArea() {
+        double area = a * a;
+        return area;
     }
 }
