@@ -1,4 +1,4 @@
-
+import java.sql.SQLOutput;
 
 public class ComputerTest {
 
@@ -12,8 +12,17 @@ public class ComputerTest {
         Computer computer = new Computer("ASUS", procesor, memory);
         Computer computer1 = new Computer("HP", procesor, memory1);
 
+        computer.getInfo();
+        computer1.getInfo();
 
+        System.out.println();
 
+        Overclock overclock = new Overclock();
+
+       overclock.increaseCpuClock(computer, 100);
+       overclock.increaseCpuClock(computer1, 1000);
+
+     //   System.out.println("Zwiększona prędkość procesora: " +  procesor.speed);
 
         computer.getInfo();
         computer1.getInfo();
